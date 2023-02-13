@@ -18,4 +18,17 @@ public class DowonjuneApplication {
 		return String.format("<h1>Hello, " + name + "</h1>");
 	}
 
+	@GetMapping("/bye")
+	public String bye(@RequestParam(value = "test", defaultValue = "Do you want to get a flag?") String test)
+	{
+		if (test.equals("flag"))
+		{
+			return String.format("Spring{You_kn0w_J4va?}");
+		}
+		else
+		{
+			return String.format(test);
+		}
+	}
+
 }
