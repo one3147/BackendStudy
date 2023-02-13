@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>글 작성</title>
+</head>
+<body>
+<h1>글 쓰기</h1>
+<form action="/board/save" method="post">
+<textarea name="writer" rows="1" cols="100" placeholder="제목" maxlength="100" required></textarea>
+<textarea name="contents" rows="40" cols="100" placeholder="내용" maxlength="3000" required></textarea>
+    <button type="submit">글 작성</button></form>
+</body>
+</html>
